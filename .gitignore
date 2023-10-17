@@ -1,0 +1,34 @@
+# dependencies
+/node_modules
+**/node_modules
+/.pnp
+.pnp.js
+
+# testing
+/coverage
+config/local.js
+.eslintcache
+.nyc_output
+
+# production
+/dist
+
+# commitizen as hook causes problems for some users
+.husky/prepare-commit-msg
+
+# misc
+.DS_Store
+.env
+
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# package scope registries
+.npmrc
+
+# MikroORM cache
+/temp
+
+.idea
+.vscode

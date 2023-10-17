@@ -1,0 +1,108 @@
+{
+    "extends": ["prettier"],
+    "plugins": ["import", "prettier", "@typescript-eslint"],
+    "parser": "@typescript-eslint/parser",
+    "parserOptions": {
+        "sourceType": "module"
+    },
+    "env": {
+        "es6": true,
+        "jest": true,
+        "node": true
+    },
+    "rules": {
+        "arrow-body-style": "warn",
+        "eqeqeq": "error",
+        "semi": ["error", "never"],
+        "quotes": ["error", "single", { "avoidEscape": true }],
+        "import/extensions": ["error", { "json": "always" }],
+        "indent": [
+            "error",
+            4,
+            {
+                "SwitchCase": 1,
+                "VariableDeclarator": 1,
+                "outerIIFEBody": 1,
+                "MemberExpression": 1,
+                "FunctionDeclaration": {
+                    "parameters": 1,
+                    "body": 1
+                },
+                "FunctionExpression": {
+                    "parameters": 1,
+                    "body": 1
+                },
+                "CallExpression": {
+                    "arguments": 1
+                },
+                "ArrayExpression": 1,
+                "ObjectExpression": 1,
+                "ImportDeclaration": 1,
+                "flatTernaryExpressions": true,
+                "ignoredNodes": ["JSXElement", "JSXElement *", "ConditionalExpression", "ConditionalExpression *"]
+            }
+        ],
+        "key-spacing": ["error", { "beforeColon": false, "afterColon": true, "mode": "minimum" }],
+        "max-len": ["error", { "code": 120, "ignorePattern": "^import" }],
+        "no-bitwise": ["error", { "allow": ["~"] }],
+        "no-console": "error",
+        "no-constant-condition": "error",
+        "no-debugger": "warn",
+        "no-delete-var": "error",
+        "no-dupe-keys": "error",
+        "no-duplicate-case": "error",
+        "no-empty-character-class": "error",
+        "no-eval": "error",
+        "no-ex-assign": "error",
+        "no-extend-native": "error",
+        "no-floating-decimal": "error",
+        "no-func-assign": "error",
+        "no-implied-eval": "error",
+        "no-inner-declarations": "error",
+        "no-invalid-regexp": "error",
+        "no-irregular-whitespace": "error",
+        "no-iterator": "error",
+        "no-labels": "error",
+        "no-lonely-if": "error",
+        "no-loop-func": "error",
+        "no-multi-spaces": [
+            "error",
+            {
+                "ignoreEOLComments": true,
+                "exceptions": {
+                    "VariableDeclarator": true,
+                    "ExpressionStatement": true,
+                    "ImportDeclaration": true,
+                    "AssignmentExpression": true,
+                    "BinaryExpression": true,
+                    "ConditionalExpression": true,
+                    "LogicalExpression": true
+                }
+            }
+        ],
+        "no-native-reassign": "error",
+        "no-negated-in-lhs": "error",
+        "no-nested-ternary": "warn",
+        "no-new-func": "error",
+        "no-new-object": "error",
+        "no-new-wrappers": "error",
+        "no-obj-calls": "error",
+        "no-octal": "error",
+        "no-param-reassign": "error",
+        "no-redeclare": "error",
+        "no-return-assign": "warn",
+        "no-self-compare": "error",
+        "no-sequences": "warn",
+        "no-spaced-func": "error",
+        "no-sparse-arrays": "error",
+        "no-throw-literal": "error",
+        "no-undef-init": "error",
+        "no-unreachable": "error",
+        "@typescript-eslint/no-unused-expressions": ["error", { "allowShortCircuit": true, "allowTernary": true }],
+        "@typescript-eslint/no-unused-vars": ["error", { "vars": "all", "args": "none" }],
+        "no-use-before-define": "error",
+        "prettier/prettier": "error",
+        "use-isnan": "error",
+        "valid-typeof": "error"
+    }
+}
