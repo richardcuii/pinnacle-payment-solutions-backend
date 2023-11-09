@@ -1,5 +1,5 @@
 {
-    "extends": ["prettier"],
+    "extends": ["prettier", "@typescript-eslint/recommended"],
     "plugins": ["import", "prettier", "@typescript-eslint"],
     "parser": "@typescript-eslint/parser",
     "parserOptions": {
@@ -12,6 +12,7 @@
     },
     "rules": {
         "arrow-body-style": "warn",
+        "@typescript-eslint/no-explicit-any": "off",
         "eqeqeq": "error",
         "semi": ["error", "never"],
         "quotes": ["error", "single", { "avoidEscape": true }],

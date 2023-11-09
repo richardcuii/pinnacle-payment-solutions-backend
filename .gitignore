@@ -19,6 +19,8 @@ config/local.js
 # misc
 .DS_Store
 .env
+.env.development
+.env.production
 
 npm-debug.log*
 yarn-debug.log*
