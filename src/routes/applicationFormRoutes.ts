@@ -1,8 +1,8 @@
 import express from 'express'
+import { submitApplicationForm } from '../controllers/applicationFormController'
+
 const router = express.Router()
 
-router.get('/test', (req, res) => {
-    res.json({ message: 'Test route works!' })
-})
+router.post('/submit', submitApplicationForm)
 
 export default router
